@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Tic-Tac-Toe
+	</title>
+	<link rel="stylesheet" type="text/css" href="tictactoe_stylesheet.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="tictactoe.js"></script>
+</head>
+<body>
+<center>
+<p><b>Directions:</b> Enter player names and then click play. Take turns making selections.<br> When the game is
+	over, please enter player names and click "Play" to play again.</p>
+<div id="panel">
+    <input type="text" id="player-1-inp" placeholder="Enter player 1">
+    <input type="text" id="player-2-inp" placeholder="Enter player 2">
+    <button id="playButton" onclick="playTTT()">Play!</button><br>	
+    <h1 id="board"></h1>
+</div>
+<table>
+<tr>
+<td class="board" id="t0" onclick="addMove(0)"></td>
+<td class="board" id="t1" onclick="addMove(1)"></td>
+<td class="board" id="t2" onclick="addMove(2)"></td>
+</tr>
+<tr>
+<td class="board" id="t3" onclick="addMove(3)"></td>
+<td class="board" id="t4" onclick="addMove(4)"></td>
+<td class="board" id="t5" onclick="addMove(5)"></td>
+</tr>
+<tr>
+<td class="board" id="t6" onclick="addMove(6)"></td>
+<td class="board" id="t7" onclick="addMove(7)"></td>
+<td class="board" id="t8" onclick="addMove(8)"></td>
+</tr>
+</table>
+<br>
+<button onclick="init()">New Game!</button>
+<br>
+<br>
+<a href="index.html">Back to index</a>
+
+</center>
+</body>
+</html>

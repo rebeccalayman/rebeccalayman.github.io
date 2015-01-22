@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Registration
+	</title>
+		<link rel="stylesheet" type="text/css" href="tictactoe_stylesheet.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.js"></script>
+	    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+	    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/additional-methods.js"></script>
+	    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/additional-methods.min.js"></script>	
+		<script src="tictactoe.js"></script>
+</head>
+<body>
+<center>
+<h1>Registration</h1>
+<form id="registration" onsubmit="validateEmail()">
+First Name: <input type="text" id="fname" placeholder="Enter First Name" required><br><br>
+Last Name: <input type="text" id="lname" placeholder="Enter Last Name" required><br><br>
+E-mail Address: <input type="text" id="email" placeholder="Enter Email Address" required><br><br>
+City: <input type="text" id="city" placeholder="Enter City" required><br><br>
+State: <input type="text" id="state" placeholder="Enter State" required><br><br>
+Zip Code: <input type="text" id="zip" placeholder="Enter Zip Code" required><br><br>
+<input type="submit" value="Submit"><br><br>
+</form>
+<a href="index.html">Back to index</a>
+</center>
+</body>
+</html>
